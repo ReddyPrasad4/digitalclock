@@ -5,6 +5,7 @@ function timeShow()
     var mm = date.getMinutes();
     var mo = date.getMonth();
     var dd = date.getDay();
+    var dat = date.getDate();
     var yy = date.getFullYear()
     var am_pm = "AM";
     var ss = date.getSeconds()
@@ -91,7 +92,7 @@ function timeShow()
 
     }
     document.getElementById("time").innerHTML = `${hh}:${mm} ${am_pm}`
-    document.getElementById("date").innerHTML = `${dd}/${mo}/${yy}`  
+    document.getElementById("date").innerHTML = `${dat}/${mo}/${yy}`  
     document.getElementById("sec").innerHTML = ss; 
     setTimeout(timeShow,1000)
 }
